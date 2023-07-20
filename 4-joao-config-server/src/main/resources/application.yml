@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: joao-config-server
+  #profiles:
+    #active:
+     # - native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/joaojesus92/joao-config-server
+          #username:
+          #password:
+          defaultLabel: main
+          search-paths:
+            - 'greeting-service*'
