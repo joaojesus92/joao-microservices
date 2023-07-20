@@ -1,9 +1,9 @@
 package br.com.joaojesus.repository;
 
-import br.com.joaojesus.model.Cambio;
+import br.com.joaojesus.model.Cambium;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CambioRepository extends JpaRepository<Cambio, Long> {
+public interface CambiumRepository extends JpaRepository<Cambium, Long> {
 
-  Cambio findByFromAndTo(String from, String to);
+  Cambium findByFromAndTo(String from, String to);
 }

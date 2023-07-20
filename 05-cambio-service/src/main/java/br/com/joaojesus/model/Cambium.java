@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 @Entity(name = "cambio")
-public class Cambio implements Serializable {
+public class Cambium implements Serializable {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,9 +32,9 @@ public class Cambio implements Serializable {
   @Transient
   private String environment;
 
-  public Cambio() {}
+  public Cambium() {}
 
-  public Cambio(Long id, String from, String to, BigDecimal conversionFactor, BigDecimal convertedValue, String environment) {
+  public Cambium(Long id, String from, String to, BigDecimal conversionFactor, BigDecimal convertedValue, String environment) {
     this.id = id;
     this.from = from;
     this.to = to;
@@ -94,8 +94,8 @@ public class Cambio implements Serializable {
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
-    if (!(o instanceof Cambio)) return false;
-    Cambio cambio = (Cambio) o;
+    if (!(o instanceof Cambium)) return false;
+    Cambium cambio = (Cambium) o;
     return Objects.equals(getId(), cambio.getId()) && Objects.equals(getFrom(), cambio.getFrom()) && Objects.equals(getTo(), cambio.getTo()) && Objects.equals(getConversionFactor(), cambio.getConversionFactor()) && Objects.equals(getConvertedValue(), cambio.getConvertedValue()) && Objects.equals(getEnvironment(), cambio.getEnvironment());
   }
 
