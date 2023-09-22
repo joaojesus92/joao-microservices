@@ -32,7 +32,8 @@ public class Cambium implements Serializable {
   @Transient
   private String environment;
 
-  public Cambium() {}
+  public Cambium() {
+  }
 
   public Cambium(Long id, String from, String to, BigDecimal conversionFactor, BigDecimal convertedValue, String environment) {
     this.id = id;
