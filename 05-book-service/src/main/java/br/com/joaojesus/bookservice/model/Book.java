@@ -38,7 +38,8 @@ public class Book implements Serializable {
   @Transient
   private String environment;
 
-  public Book() {}
+  public Book() {
+  }
 
   public Book(Long id, String author, String title, Date launchDate, Double price, String currency, String environment) {
     this.id = id;
