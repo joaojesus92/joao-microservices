@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-java@v3.13.0
         with:
           java-version: '17'
-          distribution: 'openjdk'
+          distribution: 'zulu'
 
       - name: Build Eureka Naming Server Container Image
         working-directory: ./06-naming-server
