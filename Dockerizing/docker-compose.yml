@@ -65,7 +65,7 @@ services:
       - jp92docker-network
 
   api-gateway:
-    image: jp92docker/api-gateway:0.0.1-SNAPSHOT
+    image: jp92docker/api-gateway:0.0.2-SNAPSHOT
     ports:
       - 8765:8765
     depends_on:
