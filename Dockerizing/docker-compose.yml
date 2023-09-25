@@ -58,14 +58,22 @@ services:
       - jp92docker-network
 
   naming-server:
-    image: jp92docker/naming-server:0.0.1-SNAPSHOT
+    image: jp92docker/naming-server
+    restart: always
+    build:
+      context: .
+      dockerfile: 06-naming-server/Dockerfile
     ports:
       - 8761:8761
     networks:
       - jp92docker-network
 
   api-gateway:
-    image: jp92docker/api-gateway:0.0.2-SNAPSHOT
+    image: jp92docker/api-gateway
+    restart: always
+    build:
+      context: .
+      dockerfile: 06-api-gateway/Dockerfile
     ports:
       - 8765:8765
     depends_on:
