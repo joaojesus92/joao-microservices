@@ -10,7 +10,7 @@
     </parent>
     <groupId>br.com.joaojesus</groupId>
     <artifactId>api-gateway</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>06-api-gateway</name>
     <description>06-api-gateway</description>
     <properties>
